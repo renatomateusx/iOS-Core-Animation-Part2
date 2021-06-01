@@ -44,6 +44,8 @@ class AnimationOneViewController: UIViewController {
     configureView()
   }
   
+  
+  //MARK: Helpers
   func configureTabBar(){
     navigationController?.navigationBar.isHidden = false
   }
@@ -71,7 +73,9 @@ class AnimationOneViewController: UIViewController {
   }
   
   
-  //MARK: Helpers
+  
+  
+  //MARK: Selectors
   @objc func animate(){
     image.animationImages = spriteImages
     image.animationDuration = 0.6

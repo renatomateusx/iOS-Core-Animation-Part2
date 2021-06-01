@@ -32,6 +32,12 @@ class ViewController: UIViewController {
     return button
   }()
   
+  private lazy var btnTwo: UIButton = {
+    let button = createButton(title: "Animation Two")
+    button.addTarget(self, action: #selector(animationTwoTapped), for: .touchUpInside)
+    return button
+  }()
+  
   // MARK: Lifecycle
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -51,6 +57,7 @@ class ViewController: UIViewController {
     view.addSubview(label)
     view.addSubview(scroll)
     scroll.addSubview(btnOne)
+    scroll.addSubview(btnTwo)
     
     NSLayoutConstraint.activate([
       label.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
@@ -70,6 +77,13 @@ class ViewController: UIViewController {
       btnOne.trailingAnchor.constraint(equalTo: scroll.trailingAnchor, constant: -10),
       btnOne.heightAnchor.constraint(equalToConstant: 42),
       btnOne.centerXAnchor.constraint(equalTo: scroll.centerXAnchor),
+      
+      
+      btnTwo.topAnchor.constraint(equalTo: btnOne.bottomAnchor, constant: 20),
+      btnTwo.leadingAnchor.constraint(equalTo: scroll.leadingAnchor, constant: 10),
+      btnTwo.trailingAnchor.constraint(equalTo: scroll.trailingAnchor, constant: -10),
+      btnTwo.heightAnchor.constraint(equalToConstant: 42),
+      btnTwo.centerXAnchor.constraint(equalTo: scroll.centerXAnchor),
       
     ])
   }
@@ -94,6 +108,10 @@ class ViewController: UIViewController {
   // MARK: Selectors
   @objc func animationOneTapped(){
     navigationController?.pushViewController(AnimationOneViewController(), animated: true)
+  }
+  
+  @objc func animationTwoTapped(){
+    navigationController?.pushViewController(AnimationTwoViewController(), animated: true)
   }
   
 }
