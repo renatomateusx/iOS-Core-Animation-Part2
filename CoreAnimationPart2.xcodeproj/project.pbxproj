@@ -44,6 +44,8 @@
 		416217032666500300953D5F /* tile01.png in Resources */ = {isa = PBXBuildFile; fileRef = 416216E62666500300953D5F /* tile01.png */; };
 		41621708266650F800953D5F /* AnimationOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41621707266650F800953D5F /* AnimationOneViewController.swift */; };
 		4162170D2666A07C00953D5F /* AnimationTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162170C2666A07C00953D5F /* AnimationTwoViewController.swift */; };
+		41FFFB102669619B00071605 /* AnimationThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FFFB0F2669619B00071605 /* AnimationThreeViewController.swift */; };
+		41FFFB162669629A00071605 /* AnimatedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FFFB152669629A00071605 /* AnimatedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +109,8 @@
 		416216E62666500300953D5F /* tile01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tile01.png; sourceTree = "<group>"; };
 		41621707266650F800953D5F /* AnimationOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationOneViewController.swift; sourceTree = "<group>"; };
 		4162170C2666A07C00953D5F /* AnimationTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationTwoViewController.swift; sourceTree = "<group>"; };
+		41FFFB0F2669619B00071605 /* AnimationThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationThreeViewController.swift; sourceTree = "<group>"; };
+		41FFFB152669629A00071605 /* AnimatedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +161,7 @@
 		4150DD5526656854008CFAA7 /* CoreAnimationPart2 */ = {
 			isa = PBXGroup;
 			children = (
+				41FFFB142669629100071605 /* Components */,
 				416216C52666464800953D5F /* Scenes */,
 				4150DD5626656854008CFAA7 /* AppDelegate.swift */,
 				4150DD5A26656854008CFAA7 /* ViewController.swift */,
@@ -191,6 +196,7 @@
 				416216C92666500300953D5F /* heartsprite */,
 				41621707266650F800953D5F /* AnimationOneViewController.swift */,
 				4162170C2666A07C00953D5F /* AnimationTwoViewController.swift */,
+				41FFFB0F2669619B00071605 /* AnimationThreeViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -229,6 +235,14 @@
 				416216E62666500300953D5F /* tile01.png */,
 			);
 			path = heartsprite;
+			sourceTree = "<group>";
+		};
+		41FFFB142669629100071605 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				41FFFB152669629A00071605 /* AnimatedButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -393,6 +407,8 @@
 				4150DD5B26656854008CFAA7 /* ViewController.swift in Sources */,
 				41621708266650F800953D5F /* AnimationOneViewController.swift in Sources */,
 				4150DD5726656854008CFAA7 /* AppDelegate.swift in Sources */,
+				41FFFB162669629A00071605 /* AnimatedButton.swift in Sources */,
+				41FFFB102669619B00071605 /* AnimationThreeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
