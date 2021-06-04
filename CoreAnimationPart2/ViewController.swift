@@ -27,20 +27,26 @@ class ViewController: UIViewController {
   }()
   
   private lazy var btnOne:UIButton = {
-    let button = createButton(title: "Animation One")
+    let button = createButton(title: "Images Animation")
     button.addTarget(self, action: #selector(animationOneTapped), for: .touchUpInside)
     return button
   }()
   
   private lazy var btnTwo: UIButton = {
-    let button = createButton(title: "Animation Two")
+    let button = createButton(title: "Square Animation")
     button.addTarget(self, action: #selector(animationTwoTapped), for: .touchUpInside)
     return button
   }()
   
   private lazy var btnThree: UIButton = {
-    let button = createButton(title: "Animation Three")
+    let button = createButton(title: "Button Animation")
     button.addTarget(self, action: #selector(animationThreeTapped), for: .touchUpInside)
+    return button
+  }()
+  
+  private lazy var btnFour: UIButton = {
+    let button = createButton(title: "Property Animation")
+    button.addTarget(self, action: #selector(animationFourTapped), for: .touchUpInside)
     return button
   }()
   
@@ -65,6 +71,7 @@ class ViewController: UIViewController {
     scroll.addSubview(btnOne)
     scroll.addSubview(btnTwo)
     scroll.addSubview(btnThree)
+    scroll.addSubview(btnFour)
     
     NSLayoutConstraint.activate([
       label.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
@@ -98,6 +105,12 @@ class ViewController: UIViewController {
       btnThree.heightAnchor.constraint(equalToConstant: 42),
       btnThree.centerXAnchor.constraint(equalTo: scroll.centerXAnchor),
       
+      btnFour.topAnchor.constraint(equalTo: btnThree.bottomAnchor, constant: 20),
+      btnFour.leadingAnchor.constraint(equalTo: scroll.leadingAnchor, constant: 10),
+      btnFour.trailingAnchor.constraint(equalTo: scroll.trailingAnchor, constant: -10),
+      btnFour.heightAnchor.constraint(equalToConstant: 42),
+      btnFour.centerXAnchor.constraint(equalTo: scroll.centerXAnchor),
+      
     ])
   }
   
@@ -129,6 +142,10 @@ class ViewController: UIViewController {
   
   @objc func animationThreeTapped(){
     navigationController?.pushViewController(AnimationThreeViewController(), animated: true)
+  }
+  
+  @objc func animationFourTapped(){
+    navigationController?.pushViewController(AnimationFourViewController(), animated: true)
   }
   
 }

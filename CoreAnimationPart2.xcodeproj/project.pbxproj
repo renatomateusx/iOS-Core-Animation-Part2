@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4141E212266A391000366383 /* AnimationFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4141E211266A391000366383 /* AnimationFourViewController.swift */; };
 		4150DD5726656854008CFAA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4150DD5626656854008CFAA7 /* AppDelegate.swift */; };
 		4150DD5B26656854008CFAA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4150DD5A26656854008CFAA7 /* ViewController.swift */; };
 		4150DD6326656859008CFAA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4150DD6126656859008CFAA7 /* LaunchScreen.storyboard */; };
@@ -66,6 +67,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4141E211266A391000366383 /* AnimationFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationFourViewController.swift; sourceTree = "<group>"; };
 		4150DD5326656854008CFAA7 /* CoreAnimationPart2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimationPart2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4150DD5626656854008CFAA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4150DD5A26656854008CFAA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 				41621707266650F800953D5F /* AnimationOneViewController.swift */,
 				4162170C2666A07C00953D5F /* AnimationTwoViewController.swift */,
 				41FFFB0F2669619B00071605 /* AnimationThreeViewController.swift */,
+				4141E211266A391000366383 /* AnimationFourViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4141E212266A391000366383 /* AnimationFourViewController.swift in Sources */,
 				4162170D2666A07C00953D5F /* AnimationTwoViewController.swift in Sources */,
 				4150DD5B26656854008CFAA7 /* ViewController.swift in Sources */,
 				41621708266650F800953D5F /* AnimationOneViewController.swift in Sources */,
