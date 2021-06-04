@@ -45,6 +45,7 @@
 		416217032666500300953D5F /* tile01.png in Resources */ = {isa = PBXBuildFile; fileRef = 416216E62666500300953D5F /* tile01.png */; };
 		41621708266650F800953D5F /* AnimationOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41621707266650F800953D5F /* AnimationOneViewController.swift */; };
 		4162170D2666A07C00953D5F /* AnimationTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162170C2666A07C00953D5F /* AnimationTwoViewController.swift */; };
+		41B6B745266A9EEE0085A15F /* AnimationFiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B6B744266A9EEE0085A15F /* AnimationFiveViewController.swift */; };
 		41FFFB102669619B00071605 /* AnimationThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FFFB0F2669619B00071605 /* AnimationThreeViewController.swift */; };
 		41FFFB162669629A00071605 /* AnimatedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FFFB152669629A00071605 /* AnimatedButton.swift */; };
 /* End PBXBuildFile section */
@@ -111,6 +112,7 @@
 		416216E62666500300953D5F /* tile01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tile01.png; sourceTree = "<group>"; };
 		41621707266650F800953D5F /* AnimationOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationOneViewController.swift; sourceTree = "<group>"; };
 		4162170C2666A07C00953D5F /* AnimationTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationTwoViewController.swift; sourceTree = "<group>"; };
+		41B6B744266A9EEE0085A15F /* AnimationFiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationFiveViewController.swift; sourceTree = "<group>"; };
 		41FFFB0F2669619B00071605 /* AnimationThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationThreeViewController.swift; sourceTree = "<group>"; };
 		41FFFB152669629A00071605 /* AnimatedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -200,6 +202,7 @@
 				4162170C2666A07C00953D5F /* AnimationTwoViewController.swift */,
 				41FFFB0F2669619B00071605 /* AnimationThreeViewController.swift */,
 				4141E211266A391000366383 /* AnimationFourViewController.swift */,
+				41B6B744266A9EEE0085A15F /* AnimationFiveViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 				4150DD5726656854008CFAA7 /* AppDelegate.swift in Sources */,
 				41FFFB162669629A00071605 /* AnimatedButton.swift in Sources */,
 				41FFFB102669619B00071605 /* AnimationThreeViewController.swift in Sources */,
+				41B6B745266A9EEE0085A15F /* AnimationFiveViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

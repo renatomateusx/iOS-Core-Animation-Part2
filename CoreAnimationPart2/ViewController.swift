@@ -50,6 +50,12 @@ class ViewController: UIViewController {
     return button
   }()
   
+  private lazy var btnFive: UIButton = {
+    let button = createButton(title: "CGAffine Animation")
+    button.addTarget(self, action: #selector(animationFiveTapped), for: .touchUpInside)
+    return button
+  }()
+  
   // MARK: Lifecycle
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -72,6 +78,7 @@ class ViewController: UIViewController {
     scroll.addSubview(btnTwo)
     scroll.addSubview(btnThree)
     scroll.addSubview(btnFour)
+    scroll.addSubview(btnFive)
     
     NSLayoutConstraint.activate([
       label.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
@@ -111,6 +118,13 @@ class ViewController: UIViewController {
       btnFour.heightAnchor.constraint(equalToConstant: 42),
       btnFour.centerXAnchor.constraint(equalTo: scroll.centerXAnchor),
       
+      
+      btnFive.topAnchor.constraint(equalTo: btnFour.bottomAnchor, constant: 20),
+      btnFive.leadingAnchor.constraint(equalTo: scroll.leadingAnchor, constant: 10),
+      btnFive.trailingAnchor.constraint(equalTo: scroll.trailingAnchor, constant: -10),
+      btnFive.heightAnchor.constraint(equalToConstant: 42),
+      btnFive.centerXAnchor.constraint(equalTo: scroll.centerXAnchor),
+      
     ])
   }
   
@@ -146,6 +160,10 @@ class ViewController: UIViewController {
   
   @objc func animationFourTapped(){
     navigationController?.pushViewController(AnimationFourViewController(), animated: true)
+  }
+  
+  @objc func animationFiveTapped(){
+    navigationController?.pushViewController(AnimationFiveViewController(), animated: true)
   }
   
 }
