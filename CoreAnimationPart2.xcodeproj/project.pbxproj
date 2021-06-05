@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		412E9CA1266C1CCE00F76F4E /* AnimationEightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412E9CA0266C1CCE00F76F4E /* AnimationEightViewController.swift */; };
 		4141E212266A391000366383 /* AnimationFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4141E211266A391000366383 /* AnimationFourViewController.swift */; };
 		4150DD5726656854008CFAA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4150DD5626656854008CFAA7 /* AppDelegate.swift */; };
 		4150DD5B26656854008CFAA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4150DD5A26656854008CFAA7 /* ViewController.swift */; };
@@ -70,6 +71,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		412E9CA0266C1CCE00F76F4E /* AnimationEightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationEightViewController.swift; sourceTree = "<group>"; };
 		4141E211266A391000366383 /* AnimationFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationFourViewController.swift; sourceTree = "<group>"; };
 		4150DD5326656854008CFAA7 /* CoreAnimationPart2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimationPart2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4150DD5626656854008CFAA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 				41B6B744266A9EEE0085A15F /* AnimationFiveViewController.swift */,
 				41E6AD42266C13CD004038DE /* AnimationSixViewController.swift */,
 				41E6AD4D266C167A004038DE /* AnimationSevenViewController.swift */,
+				412E9CA0266C1CCE00F76F4E /* AnimationEightViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				4162170D2666A07C00953D5F /* AnimationTwoViewController.swift in Sources */,
 				4150DD5B26656854008CFAA7 /* ViewController.swift in Sources */,
 				41621708266650F800953D5F /* AnimationOneViewController.swift in Sources */,
+				412E9CA1266C1CCE00F76F4E /* AnimationEightViewController.swift in Sources */,
 				4150DD5726656854008CFAA7 /* AppDelegate.swift in Sources */,
 				41FFFB162669629A00071605 /* AnimatedButton.swift in Sources */,
 				41FFFB102669619B00071605 /* AnimationThreeViewController.swift in Sources */,

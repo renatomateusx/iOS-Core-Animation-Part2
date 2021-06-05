@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AnimationSixViewController: UIViewController {
+class AnimationEightViewController: UIViewController {
 
   
   //MARK: Properties
@@ -16,6 +16,7 @@ class AnimationSixViewController: UIViewController {
   fileprivate let animator = UIViewPropertyAnimator(duration: 1, curve: .linear, animations: nil)
   
   fileprivate var blurView: UIVisualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .prominent))
+  
   
   //MARK: Lifecycle
   
@@ -52,14 +53,13 @@ class AnimationSixViewController: UIViewController {
    
     
     self.setupCABasic()
-        
+    self.setupCAGradient()
   }
   
   fileprivate func setupCABasic(){
     let basic0 = CABasicAnimation(keyPath: "transform.scale")
     basic0.toValue = 0.5
     basic0.duration = 2
-    
     basic0.fillMode = CAMediaTimingFillMode.forwards
     basic0.isRemovedOnCompletion = false
     
@@ -77,14 +77,15 @@ class AnimationSixViewController: UIViewController {
     blurView.layer.add(basic1,forKey: "renatomateusx.io/cabasicanimation")
     
     
-    let basic2 = CABasicAnimation(keyPath: "opacity")
-    basic2.toValue = 0
-    basic2.duration = 2
+  }
+  
+  fileprivate func setupCAGradient(){
+    let gradient = CAGradientLayer()
+    gradient.frame = blurView.frame
+    gradient.colors = [UIColor.red.cgColor, UIColor.cyan.cgColor, UIColor.orange.cgColor]
+//    gradient.locations = [0.3, 0.3, 0.3]
     
-    basic2.fillMode = CAMediaTimingFillMode.forwards
-    basic2.isRemovedOnCompletion = false
-    
-    blurView.layer.add(basic2,forKey: "renatomateusx.io/cabasicanimation/opacity")
+    blurView.layer.addSublayer(gradient)
   }
   
   //MARK: Selectors

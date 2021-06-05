@@ -68,6 +68,12 @@ class ViewController: UIViewController {
     return button
   }()
   
+  private lazy var btnEight: UIButton = {
+    let button = createButton(title: "CAGradient Animation")
+    button.addTarget(self, action: #selector(animationEightTapped), for: .touchUpInside)
+    return button
+  }()
+  
   // MARK: Lifecycle
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -93,6 +99,7 @@ class ViewController: UIViewController {
     scroll.addSubview(btnFive)
     scroll.addSubview(btnSix)
     scroll.addSubview(btnSeven)
+    scroll.addSubview(btnEight)
     
     NSLayoutConstraint.activate([
       label.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
@@ -152,6 +159,12 @@ class ViewController: UIViewController {
       btnSeven.heightAnchor.constraint(equalToConstant: 42),
       btnSeven.centerXAnchor.constraint(equalTo: scroll.centerXAnchor),
       
+      btnEight.topAnchor.constraint(equalTo: btnSeven.bottomAnchor, constant: 20),
+      btnEight.leadingAnchor.constraint(equalTo: scroll.leadingAnchor, constant: 10),
+      btnEight.trailingAnchor.constraint(equalTo: scroll.trailingAnchor, constant: -10),
+      btnEight.heightAnchor.constraint(equalToConstant: 42),
+      btnEight.centerXAnchor.constraint(equalTo: scroll.centerXAnchor),
+      
     ])
   }
   
@@ -200,6 +213,11 @@ class ViewController: UIViewController {
   @objc func animationSevenTapped(){
     navigationController?.pushViewController(AnimationSevenViewController(), animated: true)
   }
+  
+  @objc func animationEightTapped(){
+    navigationController?.pushViewController(AnimationEightViewController(), animated: true)
+  }
+  
   
 }
 

@@ -17,12 +17,6 @@ class AnimationSevenViewController: UIViewController {
   
   fileprivate var blurView: UIVisualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .prominent))
   
-  
-  var yAnchor: NSLayoutConstraint!
-  var widthAnchor: NSLayoutConstraint!
-  var heightAnchor: NSLayoutConstraint!
-  
-  
   //MARK: Lifecycle
   
   override func viewDidLoad() {
