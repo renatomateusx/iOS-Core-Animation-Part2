@@ -62,6 +62,12 @@ class ViewController: UIViewController {
     return button
   }()
   
+  private lazy var btnSeven: UIButton = {
+    let button = createButton(title: "CASpring Animation")
+    button.addTarget(self, action: #selector(animationSevenTapped), for: .touchUpInside)
+    return button
+  }()
+  
   // MARK: Lifecycle
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -86,6 +92,7 @@ class ViewController: UIViewController {
     scroll.addSubview(btnFour)
     scroll.addSubview(btnFive)
     scroll.addSubview(btnSix)
+    scroll.addSubview(btnSeven)
     
     NSLayoutConstraint.activate([
       label.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
@@ -139,6 +146,12 @@ class ViewController: UIViewController {
       btnSix.heightAnchor.constraint(equalToConstant: 42),
       btnSix.centerXAnchor.constraint(equalTo: scroll.centerXAnchor),
       
+      btnSeven.topAnchor.constraint(equalTo: btnSix.bottomAnchor, constant: 20),
+      btnSeven.leadingAnchor.constraint(equalTo: scroll.leadingAnchor, constant: 10),
+      btnSeven.trailingAnchor.constraint(equalTo: scroll.trailingAnchor, constant: -10),
+      btnSeven.heightAnchor.constraint(equalToConstant: 42),
+      btnSeven.centerXAnchor.constraint(equalTo: scroll.centerXAnchor),
+      
     ])
   }
   
@@ -182,6 +195,10 @@ class ViewController: UIViewController {
   
   @objc func animationSixTapped(){
     navigationController?.pushViewController(AnimationSixViewController(), animated: true)
+  }
+  
+  @objc func animationSevenTapped(){
+    navigationController?.pushViewController(AnimationSevenViewController(), animated: true)
   }
   
 }

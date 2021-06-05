@@ -207,8 +207,8 @@
 				41FFFB0F2669619B00071605 /* AnimationThreeViewController.swift */,
 				4141E211266A391000366383 /* AnimationFourViewController.swift */,
 				41B6B744266A9EEE0085A15F /* AnimationFiveViewController.swift */,
-				41E6AD4D266C167A004038DE /* AnimationSevenViewController.swift */,
 				41E6AD42266C13CD004038DE /* AnimationSixViewController.swift */,
+				41E6AD4D266C167A004038DE /* AnimationSevenViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
