@@ -56,6 +56,12 @@ class ViewController: UIViewController {
     return button
   }()
   
+  private lazy var btnSix: UIButton = {
+    let button = createButton(title: "CABasic Animation")
+    button.addTarget(self, action: #selector(animationSixTapped), for: .touchUpInside)
+    return button
+  }()
+  
   // MARK: Lifecycle
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -79,6 +85,7 @@ class ViewController: UIViewController {
     scroll.addSubview(btnThree)
     scroll.addSubview(btnFour)
     scroll.addSubview(btnFive)
+    scroll.addSubview(btnSix)
     
     NSLayoutConstraint.activate([
       label.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
@@ -125,6 +132,13 @@ class ViewController: UIViewController {
       btnFive.heightAnchor.constraint(equalToConstant: 42),
       btnFive.centerXAnchor.constraint(equalTo: scroll.centerXAnchor),
       
+      
+      btnSix.topAnchor.constraint(equalTo: btnFive.bottomAnchor, constant: 20),
+      btnSix.leadingAnchor.constraint(equalTo: scroll.leadingAnchor, constant: 10),
+      btnSix.trailingAnchor.constraint(equalTo: scroll.trailingAnchor, constant: -10),
+      btnSix.heightAnchor.constraint(equalToConstant: 42),
+      btnSix.centerXAnchor.constraint(equalTo: scroll.centerXAnchor),
+      
     ])
   }
   
@@ -164,6 +178,10 @@ class ViewController: UIViewController {
   
   @objc func animationFiveTapped(){
     navigationController?.pushViewController(AnimationFiveViewController(), animated: true)
+  }
+  
+  @objc func animationSixTapped(){
+    navigationController?.pushViewController(AnimationSixViewController(), animated: true)
   }
   
 }
