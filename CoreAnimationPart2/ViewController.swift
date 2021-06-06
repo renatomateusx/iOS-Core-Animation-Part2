@@ -24,9 +24,9 @@ class ViewController: UIViewController {
     scroll.backgroundColor = .clear
     scroll.translatesAutoresizingMaskIntoConstraints = false
     scroll.isScrollEnabled = true
-    
     return scroll
   }()
+  
   
   private lazy var btnOne:UIButton = {
     let button = createButton(title: "Images Animation")
@@ -88,6 +88,12 @@ class ViewController: UIViewController {
     return button
   }()
   
+  private lazy var btnEleven: UIButton = {
+    let button = createButton(title: "CAKeyframe - Notification")
+    button.addTarget(self, action: #selector(animationElevenTapped), for: .touchUpInside)
+    return button
+  }()
+  
   // MARK: Lifecycle
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -95,6 +101,10 @@ class ViewController: UIViewController {
     configureView()
   }
   
+  override func viewDidLayoutSubviews() {
+    let screenSize = UIScreen.main.bounds
+    scroll.contentSize = CGSize(width: screenSize.width, height: screenSize.height)
+  }
   
   // MARK: Helpers
   func configureTabBar(){
@@ -105,8 +115,10 @@ class ViewController: UIViewController {
     view.backgroundColor = .white
     
     view.addSubview(label)
+    
+   
     view.addSubview(scroll)
-    scroll.frame = self.view.bounds
+    
     scroll.addSubview(btnOne)
     scroll.addSubview(btnTwo)
     scroll.addSubview(btnThree)
@@ -117,6 +129,7 @@ class ViewController: UIViewController {
     scroll.addSubview(btnEight)
     scroll.addSubview(btnNine)
     scroll.addSubview(btnTen)
+    scroll.addSubview(btnEleven)
     
     NSLayoutConstraint.activate([
       label.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
@@ -191,6 +204,12 @@ class ViewController: UIViewController {
       btnTen.heightAnchor.constraint(equalToConstant: 42),
       btnTen.centerXAnchor.constraint(equalTo: scroll.centerXAnchor),
       
+      btnEleven.topAnchor.constraint(equalTo: btnTen.bottomAnchor, constant: 20),
+      btnEleven.leadingAnchor.constraint(equalTo: scroll.leadingAnchor, constant: 10),
+      btnEleven.trailingAnchor.constraint(equalTo: scroll.trailingAnchor, constant: -10),
+      btnEleven.heightAnchor.constraint(equalToConstant: 42),
+      btnEleven.centerXAnchor.constraint(equalTo: scroll.centerXAnchor),
+      
     ])
   }
   
@@ -250,6 +269,10 @@ class ViewController: UIViewController {
   
   @objc func animationTenTapped(){
     navigationController?.pushViewController(AnimationTenViewController(), animated: true)
+  }
+  
+  @objc func animationElevenTapped(){
+    navigationController?.pushViewController(AnimationElevenViewController(), animated: true)
   }
   
 }

@@ -71,11 +71,7 @@ class AnimationThreeViewController: UIViewController {
     buttonTwo.topAnchor.constraint(equalTo: button.bottomAnchor, constant: 40).isActive = true
     
   }
-  
-  
-  
-  
-  
+
   //MARK: Selectors
   
   @objc func buttonOneTapped(){
