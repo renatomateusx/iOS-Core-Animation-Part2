@@ -46,6 +46,7 @@
 		416217032666500300953D5F /* tile01.png in Resources */ = {isa = PBXBuildFile; fileRef = 416216E62666500300953D5F /* tile01.png */; };
 		41621708266650F800953D5F /* AnimationOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41621707266650F800953D5F /* AnimationOneViewController.swift */; };
 		4162170D2666A07C00953D5F /* AnimationTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162170C2666A07C00953D5F /* AnimationTwoViewController.swift */; };
+		4166E8E1266D329D0019BA7E /* AnimationNineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4166E8E0266D329D0019BA7E /* AnimationNineViewController.swift */; };
 		41B6B745266A9EEE0085A15F /* AnimationFiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B6B744266A9EEE0085A15F /* AnimationFiveViewController.swift */; };
 		41E6AD43266C13CE004038DE /* AnimationSixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E6AD42266C13CD004038DE /* AnimationSixViewController.swift */; };
 		41E6AD4E266C167A004038DE /* AnimationSevenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E6AD4D266C167A004038DE /* AnimationSevenViewController.swift */; };
@@ -116,6 +117,7 @@
 		416216E62666500300953D5F /* tile01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tile01.png; sourceTree = "<group>"; };
 		41621707266650F800953D5F /* AnimationOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationOneViewController.swift; sourceTree = "<group>"; };
 		4162170C2666A07C00953D5F /* AnimationTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationTwoViewController.swift; sourceTree = "<group>"; };
+		4166E8E0266D329D0019BA7E /* AnimationNineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationNineViewController.swift; sourceTree = "<group>"; };
 		41B6B744266A9EEE0085A15F /* AnimationFiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationFiveViewController.swift; sourceTree = "<group>"; };
 		41E6AD42266C13CD004038DE /* AnimationSixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationSixViewController.swift; sourceTree = "<group>"; };
 		41E6AD4D266C167A004038DE /* AnimationSevenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationSevenViewController.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				41E6AD42266C13CD004038DE /* AnimationSixViewController.swift */,
 				41E6AD4D266C167A004038DE /* AnimationSevenViewController.swift */,
 				412E9CA0266C1CCE00F76F4E /* AnimationEightViewController.swift */,
+				4166E8E0266D329D0019BA7E /* AnimationNineViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				412E9CA1266C1CCE00F76F4E /* AnimationEightViewController.swift in Sources */,
 				4150DD5726656854008CFAA7 /* AppDelegate.swift in Sources */,
 				41FFFB162669629A00071605 /* AnimatedButton.swift in Sources */,
+				4166E8E1266D329D0019BA7E /* AnimationNineViewController.swift in Sources */,
 				41FFFB102669619B00071605 /* AnimationThreeViewController.swift in Sources */,
 				41E6AD43266C13CE004038DE /* AnimationSixViewController.swift in Sources */,
 				41E6AD4E266C167A004038DE /* AnimationSevenViewController.swift in Sources */,

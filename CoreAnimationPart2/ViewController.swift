@@ -74,6 +74,12 @@ class ViewController: UIViewController {
     return button
   }()
   
+  private lazy var btnNine: UIButton = {
+    let button = createButton(title: "CAKeyframe Animation")
+    button.addTarget(self, action: #selector(animationNineTapped), for: .touchUpInside)
+    return button
+  }()
+  
   // MARK: Lifecycle
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -100,6 +106,7 @@ class ViewController: UIViewController {
     scroll.addSubview(btnSix)
     scroll.addSubview(btnSeven)
     scroll.addSubview(btnEight)
+    scroll.addSubview(btnNine)
     
     NSLayoutConstraint.activate([
       label.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
@@ -113,13 +120,11 @@ class ViewController: UIViewController {
       scroll.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
       
       
-      
       btnOne.topAnchor.constraint(equalTo: scroll.topAnchor, constant: 20),
       btnOne.leadingAnchor.constraint(equalTo: scroll.leadingAnchor, constant: 10),
       btnOne.trailingAnchor.constraint(equalTo: scroll.trailingAnchor, constant: -10),
       btnOne.heightAnchor.constraint(equalToConstant: 42),
       btnOne.centerXAnchor.constraint(equalTo: scroll.centerXAnchor),
-      
       
       btnTwo.topAnchor.constraint(equalTo: btnOne.bottomAnchor, constant: 20),
       btnTwo.leadingAnchor.constraint(equalTo: scroll.leadingAnchor, constant: 10),
@@ -139,13 +144,11 @@ class ViewController: UIViewController {
       btnFour.heightAnchor.constraint(equalToConstant: 42),
       btnFour.centerXAnchor.constraint(equalTo: scroll.centerXAnchor),
       
-      
       btnFive.topAnchor.constraint(equalTo: btnFour.bottomAnchor, constant: 20),
       btnFive.leadingAnchor.constraint(equalTo: scroll.leadingAnchor, constant: 10),
       btnFive.trailingAnchor.constraint(equalTo: scroll.trailingAnchor, constant: -10),
       btnFive.heightAnchor.constraint(equalToConstant: 42),
       btnFive.centerXAnchor.constraint(equalTo: scroll.centerXAnchor),
-      
       
       btnSix.topAnchor.constraint(equalTo: btnFive.bottomAnchor, constant: 20),
       btnSix.leadingAnchor.constraint(equalTo: scroll.leadingAnchor, constant: 10),
@@ -164,6 +167,12 @@ class ViewController: UIViewController {
       btnEight.trailingAnchor.constraint(equalTo: scroll.trailingAnchor, constant: -10),
       btnEight.heightAnchor.constraint(equalToConstant: 42),
       btnEight.centerXAnchor.constraint(equalTo: scroll.centerXAnchor),
+      
+      btnNine.topAnchor.constraint(equalTo: btnEight.bottomAnchor, constant: 20),
+      btnNine.leadingAnchor.constraint(equalTo: scroll.leadingAnchor, constant: 10),
+      btnNine.trailingAnchor.constraint(equalTo: scroll.trailingAnchor, constant: -10),
+      btnNine.heightAnchor.constraint(equalToConstant: 42),
+      btnNine.centerXAnchor.constraint(equalTo: scroll.centerXAnchor),
       
     ])
   }
@@ -216,6 +225,10 @@ class ViewController: UIViewController {
   
   @objc func animationEightTapped(){
     navigationController?.pushViewController(AnimationEightViewController(), animated: true)
+  }
+  
+  @objc func animationNineTapped(){
+    navigationController?.pushViewController(AnimationNineViewController(), animated: true)
   }
   
   
