@@ -47,6 +47,7 @@
 		41621708266650F800953D5F /* AnimationOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41621707266650F800953D5F /* AnimationOneViewController.swift */; };
 		4162170D2666A07C00953D5F /* AnimationTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162170C2666A07C00953D5F /* AnimationTwoViewController.swift */; };
 		4166E8E1266D329D0019BA7E /* AnimationNineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4166E8E0266D329D0019BA7E /* AnimationNineViewController.swift */; };
+		4166E8E6266D357C0019BA7E /* AnimationTenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4166E8E5266D357B0019BA7E /* AnimationTenViewController.swift */; };
 		41B6B745266A9EEE0085A15F /* AnimationFiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B6B744266A9EEE0085A15F /* AnimationFiveViewController.swift */; };
 		41E6AD43266C13CE004038DE /* AnimationSixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E6AD42266C13CD004038DE /* AnimationSixViewController.swift */; };
 		41E6AD4E266C167A004038DE /* AnimationSevenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E6AD4D266C167A004038DE /* AnimationSevenViewController.swift */; };
@@ -118,6 +119,7 @@
 		41621707266650F800953D5F /* AnimationOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationOneViewController.swift; sourceTree = "<group>"; };
 		4162170C2666A07C00953D5F /* AnimationTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationTwoViewController.swift; sourceTree = "<group>"; };
 		4166E8E0266D329D0019BA7E /* AnimationNineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationNineViewController.swift; sourceTree = "<group>"; };
+		4166E8E5266D357B0019BA7E /* AnimationTenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationTenViewController.swift; sourceTree = "<group>"; };
 		41B6B744266A9EEE0085A15F /* AnimationFiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationFiveViewController.swift; sourceTree = "<group>"; };
 		41E6AD42266C13CD004038DE /* AnimationSixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationSixViewController.swift; sourceTree = "<group>"; };
 		41E6AD4D266C167A004038DE /* AnimationSevenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationSevenViewController.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 				41E6AD4D266C167A004038DE /* AnimationSevenViewController.swift */,
 				412E9CA0266C1CCE00F76F4E /* AnimationEightViewController.swift */,
 				4166E8E0266D329D0019BA7E /* AnimationNineViewController.swift */,
+				4166E8E5266D357B0019BA7E /* AnimationTenViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4166E8E6266D357C0019BA7E /* AnimationTenViewController.swift in Sources */,
 				4141E212266A391000366383 /* AnimationFourViewController.swift in Sources */,
 				4162170D2666A07C00953D5F /* AnimationTwoViewController.swift in Sources */,
 				4150DD5B26656854008CFAA7 /* ViewController.swift in Sources */,
