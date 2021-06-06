@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AnimationFourViewController: UIViewController {
+class   AnimationFourViewController: UIViewController {
   
   
   //MARK: Properties
@@ -50,6 +50,11 @@ class AnimationFourViewController: UIViewController {
     configureView()
   }
   
+  override func viewWillDisappear(_ animated: Bool) {
+    animator.stopAnimation(true)
+    animator.finishAnimation(at: .current)
+  }
+  
   
   //MARK: Helpers
   func configureTabBar(){
@@ -85,9 +90,6 @@ class AnimationFourViewController: UIViewController {
    
     
   }
-  
-  
-  
   
   //MARK: Selectors
   
